@@ -41,29 +41,3 @@ fun DefaultPreview() {
         Greeting("Android")
     }
 }
-
-enum class MyColors(val color: Color) {
-    Red(Color.Red), Green(Color.Green), Blue(Color.Blue)
-}
-
-@Preview(showBackground = true)
-@Composable
-fun CrossfadeDemo() {
-    var currentColor by remember { mutableStateOf(MyColors.Red) }
-    Column {
-        Row {
-            MyColors.values().forEach { myColors ->
-                Button(
-                    onClick = { currentColor = myColors },
-                    Modifier.weight(1f, true)
-                        .height(48.dp).background(myColors.color),colors = ButtonDefaults.buttonColors(backgroundColor = myColors.color)
-                ) {
-                    Text(myColors.name)
-                }
-            }
-        }
-        Crossfade(targetState = currentColor, animationSpec = tween(3000)) { selectedColor ->
-            Box(modifier = Modifier.fillMaxSize().background(selectedColor.color))
-        }
-    }
-}
