@@ -1,4 +1,4 @@
-package com.odin.composesample.ui.module.etc
+package com.odin.composesample.ui.etc
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.animation.core.tween

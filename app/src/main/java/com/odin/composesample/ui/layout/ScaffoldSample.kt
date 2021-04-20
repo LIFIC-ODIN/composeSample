@@ -1,4 +1,4 @@
-package com.odin.composesample.ui.module.layout
+package com.odin.composesample.ui.layout
 
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
