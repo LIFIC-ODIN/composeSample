@@ -1,4 +1,4 @@
-package com.odin.composesample.ui.theme
+package com.odin.composesample.learn.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

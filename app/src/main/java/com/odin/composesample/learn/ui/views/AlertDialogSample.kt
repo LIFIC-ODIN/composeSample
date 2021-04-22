@@ -1,4 +1,4 @@
-package com.odin.composesample.ui.views
+package com.odin.composesample.learn.ui.views
 
 import android.os.Bundle
 import androidx.activity.compose.setContent

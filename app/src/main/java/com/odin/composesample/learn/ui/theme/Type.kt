@@ -1,4 +1,4 @@
-package com.odin.composesample.ui.theme
+package com.odin.composesample.learn.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

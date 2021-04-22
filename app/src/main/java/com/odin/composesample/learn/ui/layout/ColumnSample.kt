@@ -1,4 +1,4 @@
-package com.odin.composesample.ui.layout
+package com.odin.composesample.learn.ui.layout
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*

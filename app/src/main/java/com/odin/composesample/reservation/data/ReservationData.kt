@@ -1,4 +1,4 @@
-package com.odin.composesample.application
+package com.odin.composesample.reservation.data
 
 data class ReservationData(
     val key: Int,

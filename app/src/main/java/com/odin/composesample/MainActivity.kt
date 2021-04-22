@@ -3,34 +3,33 @@ package com.odin.composesample
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.tooling.preview.Preview
-import com.odin.composesample.ui.theme.ComposeSampleTheme
+import com.odin.composesample.reservation.ui.ReservationHome
+import com.odin.composesample.theme.ComposeDefaultTheme
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
-            ComposeSampleTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(color = MaterialTheme.colors.background) {
-                    Greeting("Android")
-                }
+            ComposeDefaultTheme {
+                UIContent()
             }
         }
     }
-}
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
+    @Composable
+    fun UIContent() {
+        ReservationHome()
+    }
 
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    ComposeSampleTheme {
-        Greeting("Android")
+    @Preview
+    @Composable
+    fun ShowDefault() {
+        ComposeDefaultTheme {
+            UIContent()
+        }
     }
 }
