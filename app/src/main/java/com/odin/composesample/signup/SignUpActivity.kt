@@ -9,6 +9,7 @@ import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.odin.composesample.signup.views.EmailBoarding
+import com.odin.composesample.signup.views.PasswordBoarding
 import com.odin.composesample.signup.views.SignUpBottomBar
 import com.odin.composesample.signup.views.SignUpTopBar
 import com.odin.composesample.theme.ComposeDefaultTheme
@@ -27,8 +28,6 @@ class SignUpActivity : ComponentActivity() {
         setContent {
             ShowLoginView()
         }
-
-        observer()
     }
 
     private fun observer() {
@@ -58,7 +57,8 @@ class SignUpActivity : ComponentActivity() {
                     SignUpTopBar()
                 },
                 content = {
-                    EmailBoarding()
+//                    EmailBoarding()
+                    PasswordBoarding()
                 },
                 bottomBar = {
                     SignUpBottomBar()

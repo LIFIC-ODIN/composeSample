@@ -24,18 +24,18 @@ fun SignUpBottomBar() {
         backgroundColor = colorResource(id = R.color.purple_1),
         contentColor = MaterialTheme.colors.surface
     )
-    val signUpViewModel: SignUpViewModel = viewModel()
+//    val signUpViewModel: SignUpViewModel = viewModel()
 
     Row {
         Button(
             colors = mainButtonColor,
             onClick = {
-                signUpViewModel.changeStatus(
-                    when (signUpViewModel.signUpStatus.value) {
-                        SignUpStatus.None -> SignUpStatus.MakeEmail
-                        else -> SignUpStatus.None
-                    }
-                )
+//                signUpViewModel.changeStatus(
+//                    when (signUpViewModel.signUpStatus.value) {
+//                        SignUpStatus.None -> SignUpStatus.MakeEmail
+//                        else -> SignUpStatus.None
+//                    }
+//                )
             },
             modifier = Modifier
                 .height(56.dp)
